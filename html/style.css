@@ -1,0 +1,282 @@
+@font-face {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Quicksand Light"), local("Quicksand-Light"),
+    url(https://fonts.gstatic.com/s/quicksand/v8/6xKodSZaM9iE8KbpRA_pgHYYT8L_.woff2)
+      format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+.page-home .navbar {
+  background-color: #00000091 !important;
+}
+
+div#home {
+  color: #fff;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.page-home .navbar {
+  background-color: #00000091;
+}
+.page-home {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.hero-image {
+  background-color: transparent;
+  padding: 100px;
+}
+
+.hero-image-contents {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 20px;
+}
+
+.special-text {
+  color: #1dbf73;
+}
+
+.hero-image-contents p {
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.hero-image-contents h1 {
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.hero-image-contents h4 {
+  font-size: 24px;
+  font-weight: 400;
+  color: white;
+  padding-top: 20px;
+}
+
+.image-contents {
+  width: 50% !important;
+}
+.text-contents {
+  width: 50% !important;
+}
+section.hero-image {
+  color: white;
+}
+.image-contents img {
+  width: 100%;
+}
+
+.container-styling-text p {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  overflow: hidden;
+}
+.container-styling-text p span.typed-text {
+  font-weight: normal;
+  color: #1dbf73;
+}
+
+.container-styling-text p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.container-styling-text p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}
+
+.text-contents h1 {
+  font-size: 35px !important;
+}
+.text-contents p {
+  color: skyblue;
+}
+
+/**only for the button of the slider**/
+
+.button-join-now {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  padding-block: 0.5rem;
+  padding-inline: 1.25rem;
+  background-color: transparent;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: skyblue;
+  gap: 10px;
+  font-weight: bold;
+  border: 3px solid skyblue;
+  outline: none;
+  overflow: hidden;
+  font-size: 15px;
+}
+.button-join-now:hover {
+  background: #1dbf73;
+  color: white;
+}
+
+.icon-arrow {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-join-now:hover {
+  transform: scale(1.05);
+  border-color: #fff9;
+}
+
+.button-join-now:hover .icon {
+  transform: translate(4px);
+}
+
+.button-join-now:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+
+.button-join-now::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+
+  60% {
+    left: 100%;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+p.contact-form-text {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+/**responsive design start from here **/
+
+@media (max-width: 991px) {
+  .hero-image-contents {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-image-contents img {
+    width: 100%;
+  }
+
+  .hero-image {
+    padding: 20px;
+  }
+  .hero-image-contents h1 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .text-contents {
+    width: 100% !important;
+  }
+  .image-contents {
+    width: 100% !important;
+  }
+  .hero-image-contents h4 {
+    font-size: 20px;
+  }
+  .hero-image-contents button {
+    font-size: 18px;
+    padding: 15px 20px;
+    margin: 20px 0;
+  }
+  .only-link-button {
+    display: flex;
+    justify-content: center;
+  }
+  .floating-button {
+    display: none;
+  }
+  .button-join-now {
+    background: rgb(0 107 179);
+    color: white;
+  }
+}
+.vg-page {
+  position: relative;
+  display: block;
+  padding: 0 !important;
+  width: 100%;
+  overflow: hidden;
+}
+.icon img {
+  width: 65px;
+  height: 65px;
+}
+
+.contact-form-only {
+  justify-content: center;
+}
+.contact-form-custom {
+  justify-content: center;
+}
+div#contact {
+  margin: 4% 0;
+}
+
+@media (min-width: 769px) {
+  .row.mt-5 h4.fg-theme {
+    font-size: 21px !important;
+  }
+  .card-service {
+    padding: 0px !important;
+  }
+  form.vg-contact-form {
+    padding-bottom: 0;
+  }
+}
