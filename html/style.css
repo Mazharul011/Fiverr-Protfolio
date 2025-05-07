@@ -32,7 +32,10 @@ div#home {
 
 .hero-image {
   background-color: transparent;
-  padding: 100px;
+  /* padding: 100px; */
+}
+.hero-image .image-contents img {
+  width: 630px;
 }
 
 .hero-image-contents {
