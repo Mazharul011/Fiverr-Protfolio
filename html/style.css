@@ -36,7 +36,9 @@ div#home {
 }
 
 .hero-image .image-contents img {
-  width: 630px;
+  width: 100%;
+  max-width: 630px;
+  height: auto; /* maintains aspect ratio */
 }
 
 .hero-image-contents {
@@ -120,7 +122,7 @@ section.hero-image {
 }
 
 .text-contents h1 {
-  font-size: 35px !important;
+  font-size: 35px;
 }
 .text-contents p {
   color: skyblue;
@@ -253,6 +255,28 @@ p.contact-form-text {
   .button-join-now {
     background: rgb(0 107 179);
     color: white;
+  }
+  /* top slider */
+  .text-contents.wow.fadeInRight h1,
+  .text-contents.wow.fadeInRight p {
+    font-size: 30px;
+  }
+  .text-contents.wow.fadeInRight p {
+    margin-bottom: 0 !important;
+  }
+  .hero-image .image-contents img {
+    height: 328px;
+    width: 100%;
+    margin-top: 50px;
+  }
+  .vg-page.page-service .card.card-service.wow.fadeInUp {
+    margin: 0;
+    padding: 5px;
+  }
+  .vg-page.page-client .row,
+  .vg-page.page-funfact .row.section-counter {
+    display: grid;
+    grid-template-columns: auto auto;
   }
 }
 .vg-page {
