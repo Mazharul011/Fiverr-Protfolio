@@ -32,8 +32,9 @@ div#home {
 
 .hero-image {
   background-color: transparent;
-  /* padding: 100px; */
+  padding: 100px;
 }
+
 .hero-image .image-contents img {
   width: 630px;
 }
@@ -281,5 +282,8 @@ div#contact {
   }
   form.vg-contact-form {
     padding-bottom: 0;
+  }
+  .hero-image .image-contents.wow.fadeInLeft {
+    text-align: end;
   }
 }
