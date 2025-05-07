@@ -206,7 +206,7 @@ section.hero-image {
   }
 }
 p.contact-form-text {
-  width: 50%;
+  width: min(90%, 900px);
   margin: auto;
   text-align: center;
 }
