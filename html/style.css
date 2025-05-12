@@ -124,7 +124,7 @@ section.hero-image {
 .text-contents h1 {
   font-size: 35px;
 }
-.text-contents p {
+.text-contents .skyblue-color {
   color: skyblue;
 }
 
@@ -301,6 +301,13 @@ div#contact {
   margin: 4% 0;
 }
 
+.banner-categories {
+  margin: 2px !important;
+  padding: 2px !important;
+}
+.only-link-button a:hover {
+  text-decoration: none !important;
+}
 @media (min-width: 769px) {
   .row.mt-5 h4.fg-theme {
     font-size: 21px !important;
