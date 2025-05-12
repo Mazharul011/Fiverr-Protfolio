@@ -242,7 +242,7 @@ p.contact-form-text {
   }
   .hero-image-contents button {
     font-size: 18px;
-    padding: 15px 20px;
+    padding: 10px 20px;
     margin: 20px 0;
   }
   .only-link-button {
@@ -259,15 +259,15 @@ p.contact-form-text {
   /* top slider */
   .text-contents.wow.fadeInRight h1,
   .text-contents.wow.fadeInRight p {
-    font-size: 30px;
+    font-size: 26px;
   }
   .text-contents.wow.fadeInRight p {
     margin-bottom: 0 !important;
   }
   .hero-image .image-contents img {
-    height: 328px;
+    height: 280px;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 93px;
   }
   .vg-page.page-service .card.card-service.wow.fadeInUp {
     margin: 0;
@@ -277,6 +277,13 @@ p.contact-form-text {
   .vg-page.page-funfact .row.section-counter {
     display: grid;
     grid-template-columns: auto auto;
+  }
+  .container-styling-text p {
+    font-size: 22px !important;
+    font-weight: 500;
+  }
+  .for-mobile-only {
+    margin-top: 30px;
   }
 }
 .vg-page {
